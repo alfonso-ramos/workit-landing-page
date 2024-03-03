@@ -2,7 +2,12 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				'Fraunces': ["Fraunces"],
+				'Manrope': ["Manrope"]
+			}
+		},
 		colors: {
 			'white': '#fff',
 			'purple': '#24053E',
@@ -11,9 +16,15 @@ export default {
 			'pink': '#FCF8FF'
 		},
 		fontSize: {
-			'heading-s': '2rem',
-			'heading-m': '3.5rem',
-			'heading-l': '5rem',
+			'heading-s': ['2rem', {
+				lineHeight: '40px',
+			}],
+			'heading-m': ['3.5rem', {
+				lineHeight: '64px',
+			}],
+			'heading-l': ['5rem', {
+				lineHeight: '80px',
+			}],
 			base: '1.125rem'
 		},
 	},
